@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<title>W3.CSS</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<body>
+    
+<div class="w3-container">
+   
+  <table class="w3-table-all">
+    <thead>
+      <tr class="w3-red">
+        <th>ID</th>
+        <th>First Name</th>
+        <th>Email</th>
+        <th>Password</th>
+        <th>Age</th>
+        <th>Mobile</th>
+        <th>Action</th>
+      </tr>
+    </thead>
+    <% result.forEach((user)=>{ %>
+    <tr>
+      <td><%= user._id %></td>
+      <td><%= user.name %></td>
+      <td><%= user.email %></td>
+      <td><%= user.password %></td>
+      <td><%= user.age %></td>
+      <td><%= user.mobile %></td>
+      <td>
+            <div style="float:left">
+                <a href='/user/edit/<%= user._id %>'>Edit</a> &nbsp;                            
+                <form method="post" action="/user/delete/<%= user._id %>" style="float:right">
+                    <input type="submit" name="delete" value='Delete' onClick="return confirm('Are you sure you want to delete?')" />
+                    <input type="hidden" name="_method" value="DELETE" />
+                </form>
+            </div>
+        </td>
+    </tr>
+    <% }) %>
+  </table>
+</div>
+
+</body>
+</html> 
