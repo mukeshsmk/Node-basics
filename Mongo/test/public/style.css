@@ -1,0 +1,26 @@
+.container{
+    background: #90d2de;
+    margin: 0 40%;
+    padding: 30px 50px;
+}
+input{
+    margin: 15px 15px;
+    border: none;
+    padding: 7px 17px;
+    font-size: 14px;
+}
+.button{
+    background: red;
+    color: #fff;
+    border: 0;
+    padding: 8px 28px;
+    border-radius: 4px;
+    margin: 7px 100px 30px 85px;
+}
+.details{
+    text-decoration: none;
+    color: #2d2d01;
+    border: 1px solid #695f5f;
+    padding: 4px 6px;
+    margin: 55px 85px;
+}
