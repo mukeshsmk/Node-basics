@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<title>W3.CSS</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+  .logout{
+    background: #f44336;
+    padding: 8px 16px;
+    font-size: 18px;
+    border: 0;
+    float: right;
+    margin: 14px 20px;
+    color: #fff;
+    font-weight: bold;
+  }
+</style>
+<body>
+    
+<div class="w3-container">
+   
+  <table class="w3-table-all">
+    <thead>
+      <tr class="w3-red">
+        <th>ID</th>
+        <th>First Name</th>
+        <th>Email</th>
+        <th>Password</th>
+        <th>Age</th>
+        <th>Mobile</th>
+        <th>Action</th>
+      </tr>
+    </thead>
+    <% result.forEach((user)=>{ %>
+    <tr>
+      <td><%= user._id %></td>
+      <td><%= user.name %></td>
+      <td><%= user.email %></td>
+      <td><%= user.password %></td>
+      <td><%= user.age %></td>
+      <td><%= user.mobile %></td>
+      <td>
+            <div style="float:left">
+                <a href='http://localhost:3000/'> <i class="fa fa-plus-circle" style='font-size:32px;'></i>  </a>&nbsp;
+               <a href='/user/edit/<%= user._id %>'> <i  class='fa fa-pencil' style='font-size:32px;'></i>  </a>&nbsp;                          
+                <form method="post" action="/user/delete/<%= user._id %>" style="float:right">
+                    <input type="hidden" name="_method" value="DELETE" />
+                   <input type="submit" name="delete" placeholder="&#61447" value='Delete' onClick="return confirm('Are you sure you want to delete?')" />   
+                   <!-- <i class="fa fa-trash-o" style="font-size:32px;color:red"></i> -->
+                </form>
+              
+            </div>
+           
+        </td>
+    </tr>
+    <% }) %>
+  </table>
+</div>
+    <form style="float:right">
+      <a class="logout" href='http://localhost:3000/login'>Logout</a>
+    </form>
+</body>
+</html> 
