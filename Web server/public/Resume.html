@@ -1,0 +1,536 @@
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    
+    <style>
+        body {
+            margin: 0;
+        }
+
+        .region-inner main-inner {
+            width: 100% !important;
+        }
+
+        .blogContainer {
+            width: 100%;
+            float: left;
+        }
+
+        .clear {
+            clear: both;
+        }
+
+        .topContainer {
+            background: #a8a8a8;
+            width: 100%;
+            float: left;
+        }
+
+        .profileDetails {
+            width: 45%;
+            float: left;
+            padding: 0 0 0 5%;
+        }
+
+        .icon1 {
+            width: 4%;
+            float: left;
+        }
+
+        .icon2 {
+            width: 96%;
+            float: left;
+        }
+
+        .fa {
+            margin-top: 2px;
+        }
+
+        .profileDetails p {
+            margin: 0px 0;
+            line-height: 26px;
+        }
+
+        .profilePic {
+            width: 50%;
+            float: left;
+            margin: 1% 0;
+        }
+
+        .Img {
+            width: 23%;
+            border: 1px;
+            margin: 0px 20%;
+            border-radius: 50%;
+        }
+
+        .profileTitle {
+            font-weight: 600;
+        }
+
+        .career {
+            padding: 0 5%;
+        }
+
+        .careertitle {
+            color: rgb(42, 42, 42);
+            font-family: "Source Sans Pro", sans-serif;
+            font-weight: 600;
+        }
+
+        .careercontent {
+            line-height: 25px;
+            font-size: 18px;
+        }
+
+        .profileAddress {
+            margin: 0 20px;
+        }
+
+        .profileContact {
+            margin: 0 20px;
+        }
+
+        .WorkExperience {
+            padding: 0 5%;
+        }
+
+        .worktitle {
+            color: rgb(42, 42, 42);
+            font-family: "Source Sans Pro", sans-serif;
+            font-weight: 600;
+        }
+
+        .Job {
+            color: #686868;
+            font-weight: bold;
+        }
+
+        .companyDetails {
+            width: 100%;
+            float: left;
+        }
+
+        .companyName {
+            width: 70%;
+            float: left;
+            line-height: 25px;
+        }
+
+        .companyExperiencr {
+            width: 30%;
+            float: left;
+        }
+
+        .Education {
+            padding: 0 5%;
+        }
+
+        .Educationtitle {
+            color: rgb(42, 42, 42);
+            font-family: "Source Sans Pro", sans-serif;
+            font-weight: 600;
+        }
+
+        .collegeDetails {
+            line-height: 25px;
+        }
+
+        .schlDetails span {
+            font-weight: bold;
+        }
+
+        .Skills {
+            padding: 0 5%;
+        }
+
+        .Skillstitle {
+            color: rgb(42, 42, 42);
+            font-family: "Source Sans Pro", sans-serif;
+            font-weight: 600;
+        }
+
+        .Project {
+            padding: 0 5%;
+        }
+
+        dd {
+            line-height: 25px;
+            font-size: 16px;
+        }
+
+        .Projecttitle {
+            color: rgb(42, 42, 42);
+            font-family: "Source Sans Pro", sans-serif;
+            font-weight: 600;
+        }
+
+        @media only screen and (min-width : 768px) and (max-width : 1024px) {
+            .blogContainer {
+                width: 100%;
+                float: left;
+            }
+
+            .clear {
+                clear: both;
+            }
+
+            .topContainer {
+                background: #a8a8a8;
+                width: 100%;
+                float: left;
+            }
+
+            .icon1 {
+                width: 4%;
+                float: left;
+            }
+
+            .icon2 {
+                width: 96%;
+                float: left;
+            }
+
+            .profileDetails {
+                width: 45%;
+                float: left;
+                padding: 0 0 0 5%;
+            }
+
+            .profileDetails p {
+                margin: 7px 0;
+                line-height: 20px;
+            }
+
+            .Img {
+                width: 48%;
+                margin: 0px 14%;
+            }
+
+            .fa {
+                margin-top: 9px;
+                margin-left: -5px;
+            }
+
+            dd {
+                line-height: 25px;
+                font-size: 16px;
+            }
+        }
+
+        @media only screen and (min-width : 320px) and (max-width : 480px) {
+            body {
+                font-size: 1em;
+            }
+
+            .profileDetails h1 {
+                font-size: 20px;
+            }
+
+            .Img {
+                width: 75%;
+                margin: 2% 11%;
+            }
+
+            .fa {
+                margin-top: 2px;
+                margin-left: -5px;
+                font-size: 13px !important;
+            }
+
+            .icon1 {
+                width: 7%;
+                float: left;
+            }
+
+            .icon2 {
+                width: 93%;
+                float: left;
+            }
+
+            .profileDetails p {
+                margin: 0px 0;
+                line-height: 18px;
+                font-size: 13px;
+            }
+
+            .careertitle,
+            .worktitle,
+            .Educationtitle,
+            .Skillstitle,
+            .Projecttitle {
+                color: rgb(42, 42, 42);
+                font-family: "Source Sans Pro", sans-serif;
+                font-weight: 600;
+                margin: 10px 0;
+                font-size: 13px;
+            }
+
+            .careercontent {
+                line-height: 20px;
+                font-size: 13px;
+                text-align: justify;
+                margin: 0 0;
+            }
+
+            .companyName {
+                width: 70%;
+                float: left;
+                font-size: 13px;
+                line-height: 20px;
+            }
+
+            .Job {
+                color: #686868;
+                font-weight: bold;
+                font-size: 13px;
+            }
+
+            .companyExperience {
+                width: 30%;
+                float: left;
+                font-size: 13px;
+            }
+
+            .collegeDetails {
+                line-height: 20px;
+                font-size: 13px;
+            }
+
+            .schlDetails {
+                font-size: 13px;
+            }
+
+            .schlDetails span {
+                font-weight: bold;
+                font-size: 13px;
+            }
+
+            dd {
+                font-size: 13px;
+            }
+
+            d1 {
+                font-size: 13px;
+                line-height: 20px;
+            }
+
+            .project-d1 {
+                font-size: 13px;
+                line-height: 25px;
+            }
+        }
+
+
+        .social-icons {
+            padding: 9px;
+            font-size: 24px;
+            width: 25px;
+            text-align: center;
+            text-decoration: none;
+            margin: 5px 2px;
+            border-radius: 50%;
+            }
+
+            .fa:hover {
+                opacity: 0.7;
+            }
+
+            .fa-facebook {
+            background: #3B5998;
+            color: white;
+            }
+
+            .fa-twitter {
+            background: #55ACEE;
+            color: white;
+            }
+
+            .fa-google {
+            background: #dd4b39;
+            color: white;
+            }
+
+            .fa-linkedin {
+            background: #007bb5;
+            color: white;
+            }
+            .fa-instagram {
+            background: #125688;
+            color: white;
+            }
+            .fa-github{
+                background: #000000;
+                color: #f7f7f7;
+            }
+            .social-media{
+                padding: 1% 8%;
+            }
+    </style>
+</head>
+
+<body>
+    <div class="blogContainer">
+        <div class="topContainer">
+            <div class="profileDetails">
+                <h1>Mukesh Kumar S</h1>
+                <div class="icon1">
+                    <span><i class="fa fa-map-marker" style="font-size:20px;"></i></span>
+                </div>
+                <div class="icon2">
+                    <p class="profileTitle">ADDRESS:</p>
+                    <p class="profileAddress">12/49 J.J.Nagar west,</p>
+                    <p class="profileAddress">Mugapair west, Chennai.</p>
+                </div>
+
+                <div class="icon1">
+                    <span><i class="fa fa-phone" style="font-size:20px;"></i></span>
+                </div>
+
+                <div class="icon2">
+                    <p class="profileTitle"> CONTACT:</p>
+                    <p class="profileContact">mukeshkumarsmk45@gmail.com</p>
+                    <p class="profileContact">9688711770</p>
+                </div>
+            </div>
+            <div class="profilePic"><img
+                    src="https://2.bp.blogspot.com/-GfOVwXqOqfg/XF0upldSuJI/AAAAAAAAAs0/rOPm-I7dS8oBWT3PJn0cnXhQCMrcHvNmwCLcBGAs/s320/img.jpg"
+                    class="Img" /></div>
+        </div>
+
+        <div class="clear"></div>
+
+        <div class="career">
+            <p class="careertitle">CAREER OBJECTIVE</p>
+            <p class="careercontent">
+                Highly motivated quick learner, team player and success Oriented
+                professional seeking a challenging position to contribute my skills
+                and knowledge in advanced technologies.
+            </p>
+        </div>
+
+        <div class="clear"></div>
+
+        <div class="WorkExperience">
+            <p class="worktitle">WORK EXPERIENCE</p>
+            <p class="Job">SOFTWARE DEVELOPER</p>
+            <div class="companyDetails">
+                <div class="companyName">
+                    IRtrends Private Limited <br />
+                    Chennai.
+                </div>
+                <div class="companyExperience">MAY 2018 - PRESENT</div>
+            </div>
+
+            <div class="clear"></div>
+
+            <p class="Job">JUNIOR HYBRID DEVELOPER</p>
+            <div class="companyDetails">
+                <div class="companyName">
+                    Blync Solutions <br />
+                    Trichy.
+                </div>
+                <div class="companyExperience">FEB 2018 - APR 2018</div>
+            </div>
+        </div>
+
+        <div class="clear"></div>
+
+        <div class="Education">
+            <p class="Educationtitle">EDUCATION</p>
+            <p class="collegeDetails">
+                B.E Computer Science and Engineering .<br />
+                SNS College of Engineering(2013-2017). <br />
+                CGPA : 6.6 <br />
+            </p>
+            <p class="schlDetails"><span>HSC(2013):</span> Percentage : 74%</p>
+            <p class="schlDetails"><span>SSLC(2011):</span> Percentage : 87%</p>
+        </div>
+
+        <div class="clear"></div>
+
+        <div class="Skills">
+            <dl class="d1">
+                <dt class="Skillstitle">SKILLS</dt>
+                <dd>HTML</dd>
+                <dd>Css</dd>
+                <dd>Ionic</dd>
+                <dd>Angular</dd>
+                <dd>React</dd>
+                <dd>Wordpress</dd>
+            </dl>
+        </div>
+
+        <div class="clear"></div>
+
+        <div class="Project">
+            <p class="Projecttitle">PROJECT SUMMARY</p>
+            <dl style="line-height: 25px;">
+                <dt style="color: #433d3d;font-weight: bold;">Benkey Matrimony</dt>
+                <dd>Team Size: 2</dd>
+                <dd>Role: Software Developer</dd>
+                <dd>Skills Used: Ionic 3,Angular 2,Visual Studio Code.</dd>
+                <dd>
+                    URL:
+                    <a style="color: #007eff;"
+                        href="https://play.google.com/store/apps/details?id=io.ionic.benkeymatrimony"
+                        target="_blank">https://play.google.com/store/apps/details?id=io.ionic.benkeymatrimony</a>
+                </dd>
+                <dd>
+                    This app used for online matrimonial servic, user friendl and
+                    secured.
+                </dd>
+            </dl>
+
+            <dl style="line-height: 25px;">
+                <dt style="color: #433d3d;font-weight: bold;">Coinmee</dt>
+                <dd>Team Size: 3</dd>
+                <dd>Role: UI Developer</dd>
+                <dd>Skills Used: HTML,CSS,Dreamweaver</dd>
+                <dd>
+                    URL:
+                    <a style="color: #007eff;" href="www.coinmee.com" target="_blank">
+                        www.coinmee.com</a>
+                </dd>
+                <dd>
+                    This website is used for large integrated financial services company
+                    located in Switzerland.
+                </dd>
+            </dl>
+
+            <dl style="line-height: 25px;">
+                <dt style="color: #433d3d;font-weight: bold;">ServLynk</dt>
+                <dd>Team Size: 2</dd>
+                <dd>Role: Software Developer</dd>
+                <dd>Skills Used: React Native ,Visual Studio Code.</dd>
+                <dd>
+                    This app used for online matrimonial servic, user friendl and
+                    secured.
+                </dd>
+            </dl>
+
+            <dl style="line-height: 25px;">
+                <dt style="color: #433d3d;font-weight: bold;">Infohawk</dt>
+                <dd>Team Size: 1</dd>
+                <dd>Role: Software Developer</dd>
+                <dd>Skills Used: Wordpress.</dd>
+                <dd>
+                    This app used for online matrimonial servic, user friendl and
+                    secured.
+                </dd>
+            </dl>
+        </div>
+        <div class="social-media">
+            <a href="https://www.facebook.com/mukesh.smk.9" class="fa fa-facebook social-icons" target="_blank"></a>
+            <a href="https://twitter.com/smk_mukesh" class="fa fa-twitter social-icons" target="_blank"></a>
+            <a href="https://www.linkedin.com/in/mukesh-kumar-0b7144148/" class="fa fa-linkedin social-icons" target="_blank"></a>
+            <a href="https://www.instagram.com/smk_mukesh/" class="fa fa-instagram social-icons" target="_blank"></a>
+            <a href="https://github.com/mukeshsmk" class="fa fa-github social-icons" target="_blank"></a>
+        </div>
+    </div>
+    
+</body>
+
+</html>
